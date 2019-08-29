@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="prompt">授权登录</text>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary"> 授权登录 </button>
+</view>
